@@ -18,7 +18,7 @@ app.use(
     secure: process.env.NODE_ENV !== 'test'
   })
 );
-console.log("STARTING APP...")
+console.log("STARTING APP.....")
 app.use(currentUserRouter);
 app.use(signinRouter);
 app.use(signoutRouter);
