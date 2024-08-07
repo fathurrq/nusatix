@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   rules:
-    - host: www.nusatix.biz.id
+    - host: nusatix.biz.id
       http:
         paths:
           - path: /api/payments/?(.*)
@@ -52,7 +52,7 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'false'
-    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.nusatix.biz.id'
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'nusatix.biz.id'
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
